@@ -1,0 +1,19 @@
+.main {
+	padding: 2rem 2rem;
+	border: 1px solid var(--gray_2);
+}
+
+.main__title {
+	font-size: 3.2rem;
+	text-align: center;
+	text-transform: uppercase;
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}
+
+.main__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 33.333%));
+	gap: 2rem;
+}

@@ -1,0 +1,56 @@
+.todolist_w {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem 1rem;
+	box-shadow: 0 0 .5rem .3rem var(--gray_1);
+}
+
+.todolist_title {
+	margin-bottom: 1.5rem;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.todolist_form {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}
+
+.todolist {
+	margin-bottom: 2rem;
+}
+
+.todolist__item {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid var(--gray_2);
+	}
+}
+
+.todolist__field {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.todolist__checkbox {
+	display: block;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.todolist__title {
+	display: block;
+	&.todolist__title--done_mod {
+		text-decoration: line-through;
+	}
+}

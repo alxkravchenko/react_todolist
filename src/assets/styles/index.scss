@@ -1,0 +1,72 @@
+@import './utils/bootstrap-reboot.css';
+
+html {
+	font-size: 10px;
+	--black_1: #212529;
+	--gray_1: #f4f6f8;
+	--gray_2: #c5d0da;
+	--link_color: #4aa3df;
+}
+
+
+body {
+	min-height: 100vh;
+	font-size: 1.6rem;
+	line-height: 1.33;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: var(--link_color);
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+#root {
+	display: flex;
+	align-items: flex-start;
+	min-height: 100vh;
+	padding: 10rem 2rem 2rem 2rem;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	max-width: 120rem;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.nav_list {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.nav_list__link {
+	position: relative;
+	display: block;
+	padding: 1rem 1.5rem;
+	color: var(--black_1);
+	font-weight: 500;
+	font-size: 1.8rem;
+	background-color: var(--gray_1);
+	border: 1px solid var(--gray_2);
+	border-bottom: none;
+
+	.nav_list__item:not(:first-child) & {
+		border-left: none;
+	}
+}
